@@ -1,3 +1,0 @@
-/home/ash/opencv_project/build/CMakeFiles/OpenCV_Project.dir
-/home/ash/opencv_project/build/CMakeFiles/edit_cache.dir
-/home/ash/opencv_project/build/CMakeFiles/rebuild_cache.dir
