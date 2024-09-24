@@ -4,13 +4,15 @@
 ## C++、Cmake和OpenCV库的配置
 - 根据任务书安装OpenCV库
 - 不确定以前是否安装，检查版本号
-![检验C++和Cmake配置]("resources/process_picture_1.png")
+![检验C++和Cmake配置](https://github.com/user-attachments/assets/0c1014d1-9a4a-4d3a-9828-b423d5fad0a5)
 ## 构建项目目录
-![构建项目目录]("resources/process_picture_2.png")
+![构建项目目录](https://github.com/user-attachments/assets/4a93e912-6c42-4137-828b-2d4030f9b567)
+
 # CMakeLists.txt的编写
 ## 遇到困难
 - 找不到OpenCV库
-![问题]("resources/process_picture_3.png")
+![问题](https://github.com/user-attachments/assets/5086a626-da4a-4efc-a200-533073b38e96)
+
 ## 解决尝试
 - 检查OpenCV库是否完整
 - 查看include文件夹和local/include文件夹中是否有OpenCV4
