@@ -21,9 +21,12 @@
 ### 面临的困难
 #### 视频选择
 - 群中发了两个视频，一个装甲板为red，一个装甲板为blue。
+- ![截图 2024-10-12 21-50-12](https://github.com/user-attachments/assets/e7e6d6fb-95f0-4948-a048-2756ca22b3ec)
 - red 视频中曝光太高了，无论怎样处理，都无法减少无关轮廓，应该选blue
 #### HSV范围调整
 - 一直无法消除灯条中间的断开部分，试过很多参数都不行
+![截图 2024-10-12 22-36-35](https://github.com/user-attachments/assets/fa442548-cd6b-43b8-bf42-21bd569f600c)
+![截图 2024-10-12 22-35-26](https://github.com/user-attachments/assets/6ad079bc-b24b-489f-808e-3de73218ad4c)
 - 最终采用灰度进行显示轮廓，效果很好
 #### 关于灯带的匹配
 - 最开始考虑角差、长度差比等各种参数以及拟合轮廓的方法（矩形或椭圆）
@@ -32,3 +35,5 @@
 #### 装甲板框90度旋转问题
 - RotatedRect类的angle变量的范围为0-180，长轴在识别时角度接近180,会产生突变
 - 通过两个角度相减找到异常，人为的加180度
+![截图 2024-10-13 01-30-12](https://github.com/user-attachments/assets/9c533bd0-bca4-439e-afb0-94ee06f05e6e)
+
