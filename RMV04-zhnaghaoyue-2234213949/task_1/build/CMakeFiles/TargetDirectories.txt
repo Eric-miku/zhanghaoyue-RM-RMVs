@@ -1,3 +1,0 @@
-/home/ash/桌面/RMV04-zhnaghaoyue-2234213949/task/build/CMakeFiles/task.dir
-/home/ash/桌面/RMV04-zhnaghaoyue-2234213949/task/build/CMakeFiles/edit_cache.dir
-/home/ash/桌面/RMV04-zhnaghaoyue-2234213949/task/build/CMakeFiles/rebuild_cache.dir
