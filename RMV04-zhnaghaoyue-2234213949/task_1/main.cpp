@@ -51,7 +51,7 @@ int main() {
 
     // 循环读取视频帧
     cv::Mat frame;
-    while (waitKey(0)) {
+    while (1) {
         // 从视频中读取一帧
         bool isSuccess = cap.read(frame);
 
