@@ -110,15 +110,21 @@ void image_process_gray(Mat& image){
     }
 
     for (const auto& contour : contours) {
-        
-       RotatedRect rotatedRect = fitEllipse(contour); // 获取最小外接矩形
+        if (contour.size() >= 5) {
+            cv::RotatedRect ellipse = cv::minAreaRect(contour);
+            cv::ellipse(image, ellipse, cv::Scalar(255, 0, 0), 2);
+        } else {
+            std::cout << "Contour too small, skipping" << std::endl;
+            cintinue;
+        }
+        RotatedRect rotatedRect = fitEllipse(contour); // 获取最小外接矩形
         // 计算长宽比
         double width = rotatedRect.size.width;
         double height = rotatedRect.size.height;
         double aspectRatio = std::max(width, height) / std::min(width, height);
 
         // 过滤条件
-        if ( aspectRatio > 3.0 && rotatedRect.size.area() > 100) {
+        if (aspectRatio < 10.0 && aspectRatio > 3.0 && rotatedRect.size.area() > 100) {
             // 绘制旋转矩形
             lightInfos.push_back(LightDescriptor(rotatedRect));
             
